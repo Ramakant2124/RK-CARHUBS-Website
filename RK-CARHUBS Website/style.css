@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('img/carbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right,  rgb(255, 255, 255), rgba(0, 106, 255, 0.5));
+
+
+
+}
+
+header h3 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a:hover{
+    color: #fffb00;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    gap: 50px;
+    height: 70%;
+}
+
+.sec1_1, .sec1_2 {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.159);
+    padding: 50px;
+    border-radius: 20px;
+}
+.sec1_1 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.sec1_1 p {
+    margin: 10px 0;
+    flex-direction: column;
+}
+
+
+.sec1_2{
+     display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.ser{
+    display: flex; 
+    gap: 40px; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    margin: 10px 10px 10px 0;
+    padding: 15px 25px;
+    border: none;
+    background: linear-gradient(to bottom,  rgb(255, 255, 255), rgba(0, 106, 255, 0.5));
+    color: rgb(12, 9, 9);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+.button1{
+        display: flex; 
+        gap: 40px; 
+        align-items: center; 
+        justify-content: center;
+
+}
+button:hover {
+    background: darkorange;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .sec1 {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+}
+footer {
+    background: linear-gradient(to right,  rgb(255, 255, 255), rgba(0, 106, 255, 0.5));
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    color: white;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+/* product css */
+
+.product{
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.productlist{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.productlist h4{
+    color: rgb(255, 255, 0);
+}
+
+.product .productlist div{
+    width: 400px;
+    background: rgba(255, 255, 255, 0.159);
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10%;
+    border-style:solid;
+    box-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+/* contact css */
+.contact{margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactus{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactus_form{
+    border: 3px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.159);
+}
+
+.contactus_details{
+    border: 3px solid rgb(255, 255, 255);   
+    width: 100%;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.445);
+    
+}
+.contactus_details b {
+    color: #ffffff;
+    
+}
+.contactus_details  h4{
+color: #110d0d;
+}
+
+.contactus_details a{
+    text-decoration: none;
+    color: rgb(15, 17, 18);
+}
+
+/* About css */
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 1450px;   /* Optional: limit the max width */
+    height: auto;        /* Adjusts height automatically based on content */
+    margin: 0 auto;      /* Centers the section horizontally */
+    padding: 20px;       /* Optional: adds inner space */
+    box-sizing: border-box;
+}
+
+
+.about_us {
+    text-align: center;
+    margin-top: 1%;
+    background: rgba(255, 255, 255, 0.159);
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.about_img {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.159);
+    border-radius: 30px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.about_img .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about_img .images a {
+    text-decoration: none;
+    color: rgb(255, 238, 0);
+}
+
+.about_img .images img {
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255);
+}
